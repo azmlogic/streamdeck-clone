@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stream Deck Clone</title>
+  </head>
+  <body>
+    <h1 class="title">🎛 STREAM DECK</h1>
+
+    <div class="streamdeck">
+      <button class="deck-button">
+        <span class="icon">🌐</span>
+        <span class="label">GitHub</span>
+      </button>
+      <button class="deck-button">
+        <span class="icon">🎨</span>
+        <span class="label">Dark</span>
+      </button>
+      <button class="deck-button">
+        <span class="icon">☀️</span>
+        <span class="label">Reset</span>
+      </button>
+      <button class="deck-button">
+        <span class="icon">🎵</span>
+        <span class="label">Sound</span>
+      </button>
+      <button class="deck-button">
+        <span class="icon">🧹</span>
+        <span class="label">Clear</span>
+      </button>
+
+      <button class="deck-button">
+        <span class="icon">🖥️</span>
+        <span class="label">VS Code</span>
+      </button>
+      <button class="deck-button">
+        <span class="icon">💻</span>
+        <span class="label">Terminal</span>
+      </button>
+      <button class="deck-button">
+        <span class="icon">🗂️</span>
+        <span class="label">Projekte</span>
+      </button>
+      <button class="deck-button">
+        <span class="icon">📝</span>
+        <span class="label">Notizen</span>
+      </button>
+      <button class="deck-button">
+        <span class="icon">📷</span>
+        <span class="label">Screenshot</span>
+      </button>
+
+      <button class="deck-button">11</button>
+      <button class="deck-button">12</button>
+      <button class="deck-button">13</button>
+      <button class="deck-button">14</button>
+      <button class="deck-button">15</button>
+    </div>
+
+    <div id="screenshot-overlay"></div>
+    <audio id="shutter-sound" src="assets/camera.mp3" preload="auto"></audio>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

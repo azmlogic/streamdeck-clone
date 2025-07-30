@@ -1,0 +1,77 @@
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Grid styled */
+.streamdeck {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-gap: 15px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.title {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.deck-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color .3s, transform .2s;
+}
+
+.deck-button:hover {
+    background-color: #2a2a2a;
+    transform: translateY(0);
+}
+
+.icon {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.label {
+    font-size: 14px;
+}
+
+#screenshot-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity .2s ease;
+}
+
+#screenshot-overlay.flash {
+    opacity: .8;
+}
